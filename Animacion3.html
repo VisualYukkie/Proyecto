@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Animacion 3</title>
+	<style type="text/css">
+
+		body {
+			font-family: georgia, serif;
+	    	background-image: url("Imagenes/Background.jpg");
+		  	background-attachment: fixed;/*para que sea estático*/
+		 	background-position: top right;/*arriba a la derecha*/
+		  	background-repeat: no-repeat;/*que no se repita el fondo*/
+		}
+
+		@-webkit-keyframes girando {
+			from { -webkit-transform: rotateY(0deg);    }
+			to   { -webkit-transform: rotateY(-360deg); }
+		}
+		@-moz-keyframes girando {
+			from { -moz-transform: rotateY(0deg);    }
+			to   { -moz-transform: rotateY(-360deg); }
+		}
+		#container {
+		    margin: 50px auto;
+		    -webkit-perspective: 300px;
+		    -moz-perspective: 300px;
+		    perspective: 300px;
+		}
+			#girando {
+				margin: 20px auto;
+				width: 400px;
+				padding: 10px;
+				height: 40px;
+				background-color: #01DFD7;
+				border: 1px solid #666;
+				color: #fff;
+				
+			    -webkit-animation-name: girando;
+				-moz-animation-name: girando;
+				animation-name: girando;
+				-webkit-animation-timing-function: linear;
+				-moz-animation-timing-function: linear;
+				animation-timing-function: linear;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+				-webkit-animation-duration: 3s;
+				-moz-animation-duration: 3s;
+				animation-duration: 3s;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+
+			  }
+			  #girando, #titulo{
+				 font:normal 30pt Arial;
+				 color:#FFFFFF;
+				 text-shadow: 0 1px 0 #ccc,
+				 0 2px 0 #c9c9c9,
+				 0 3px 0 #bbb,
+				 0 4px 0 #b9b9b9,
+				 0 5px 0 #aaa,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2),
+				 0 20px 20px rgba(0,0,0,.15);
+			}
+	</style>
+</head>
+<body>
+	<h1 id="titulo">Animacion 3</h1>
+	<div align="right">
+  		<input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
+  	</div>	
+	<div id="container">
+		<div id="girando">
+			Girando!!!
+		</div>
+	</div>
+</body>
+</html>

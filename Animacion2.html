@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Animacion 2</title>
+	<style type="text/css">
+		h1 		{color: #666; text-shadow: #ccc 1px 1px 2px;}
+		h1 a 	{color: #c00; font-size: 18px;}
+		
+		body {
+			font-family: georgia, serif;
+	    	background-image: url("Imagenes/Background.jpg");
+		  	background-attachment: fixed;/*para que sea estático*/
+		 	background-position: top right;/*arriba a la derecha*/
+		  	background-repeat: no-repeat;/*que no se repita el fondo*/
+		}
+		.caja {
+			margin: 20px;
+			width: 400px;
+			padding: 10px;
+			height: 40px;
+			background: #ccc;
+			border: 1px solid #666;
+			color: #333;
+			-webkit-transition: all 3s ease;
+			-moz-transition: all 3s ease;
+			-o-transition: all 3s ease;
+			-ms-transition: all 3s ease;
+			transition: all 3s ease;
+		}
+			#container:hover .caja {
+				background:#01DFD7;
+				color: #fff;
+				border-radius: 20px;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				-webkit-transform: translate(400px,0) rotate(5deg) skew(-15deg,0);
+				-moz-transform: translate(400px,0) rotate(5deg) skew(-15deg,0);
+				-o-transform: translate(400px,0) rotate(5deg) skew(-15deg,0);
+				-ms-transform: translate(400px,0) rotate(5deg) skew(-15deg,0);
+			}
+			#container:hover #caja2 {
+				-webkit-transition: all 3s linear;
+						-moz-transition: all 3s linear;
+						-o-transition: all 3s linear;
+						-ms-transition: all 3s linear;
+						transition: all 3s linear;
+			}
+			#container:hover #caja3 {
+				-webkit-transition: all 3s ease-in;
+						-moz-transition: all 3s ease-in;
+						-o-transition: all 3s ease-in;
+						-ms-transition: all 3s ease-in;
+						transition: all 3s ease-in;
+			}
+			#container:hover #caja4 {
+				-webkit-transition: all 3s ease-out;
+						-moz-transition: all 3s ease-out;
+						-o-transition: all 3s ease-out;
+						-ms-transition: all 3s ease-out;
+						transition: all 3s ease-out;
+			}
+			#container:hover #caja5 {
+				-webkit-transition: all 3s ease-in-out;
+						-moz-transition: all 3s ease-in-out;
+						-o-transition: all 3s ease-in-out;
+						-ms-transition: all 3s ease-in-out;
+						transition: all 3s ease-in-out;
+			}
+			#container:hover #caja6 {
+				-webkit-transition: all 3s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+						-moz-transition: all 3s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+						-o-transition: all 3s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+						-ms-transition: all 3s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+						transition: all 3s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+			}
+			#titulo{
+				 font:normal 30pt Arial;
+				 color:#FFFFFF;
+				 text-shadow: 0 1px 0 #ccc,
+				 0 2px 0 #c9c9c9,
+				 0 3px 0 #bbb,
+				 0 4px 0 #b9b9b9,
+				 0 5px 0 #aaa,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2),
+				 0 20px 20px rgba(0,0,0,.15);
+			}
+	</style>	
+</head>
+<body>
+	<h1 id="titulo">Animacion 2</h1>
+	<div align="right">
+  		<input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
+  	</div>	
+	<div id="container">
+		<div id="caja1" class="caja">Caja 1<br />transition-timing-function: none;</div>
+		<div id="caja2" class="caja">Caja 2<br />transition-timing-function: linear;</div>
+		<div id="caja3" class="caja">Caja 3<br />transition-timing-function: ease-in;</div>
+		<div id="caja4" class="caja">Caja 4<br />transition-timing-function: ease-out;</div>
+		<div id="caja5" class="caja">Caja 5<br />transition-timing-function: ease-in-out;</div>
+		<div id="caja6" class="caja">Caja 6<br />transition-timing-function: cubic-bezier(0,1,1,0);</div>
+	</div>
+
+</body>
+</html>
