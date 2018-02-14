@@ -1,0 +1,23 @@
+#tabla1{
+	width: 100%; 
+    background-color: #74DF00;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#linea1{
+	background: #01DFD7;
+	border: 2px solid black;
+    border-collapse: collapse;
+}
+#C1{
+	border: 2px solid black;
+}
+#C2{
+	border: 2px solid black;
+}
+#C3{
+	border: 2px solid black;
+}
+#C4{
+	border: 2px solid black;
+}
