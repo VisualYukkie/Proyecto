@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript 6 </TITLE>
+<link rel="stylesheet" href="css/Estilo1.css">
+
+<script language="javascript">
+
+function zipOut(){
+	for(var i=0;i<=lo;i++){
+		word[i+1]=wordy.substring(i,i+1);
+	}
+}
+
+function zip(){
+	wordy="HMTL point";
+	document.hey.a.value="";
+	document.hey.b.value="";
+	document.hey.c.value="";
+	document.hey.d.value="";
+	document.hey.e.value="";
+	lo=wordy.length;
+	beat=0;
+	word="";
+	zipOut();
+	zippy();
+}
+
+function zippy(){
+	document.hey.a.value="";
+	document.hey.b.value="";
+	document.hey.c.value="";
+	document.hey.d.value="";
+	document.hey.e.value="";
+	if(beat<11){
+	t="";
+	b="";
+	beat=beat+1;
+	for(var i=1;i<=lo;i++){
+		t=t+word[i]+" ";
+		i=i+1;
+	}		
+	for(var i=2;i<=lo;i++){
+		b=b+" "+word[i];
+		i=i+1;
+	}
+	if(beat==2||beat==10){
+		document.hey.e.value=b;
+		document.hey.a.value=t;
+	}
+	if(beat==3||beat==9||beat==11){
+		document.hey.d.value=b;
+		document.hey.b.value=t;
+	}
+	if(beat==4||beat==8){
+		document.hey.c.value=wordy;
+	}
+	if(beat==5||beat==7){
+		document.hey.d.value=t;
+		document.hey.b.value=b;
+	}
+	if(beat==6){
+		document.hey.e.value=t;
+		document.hey.a.value=b;
+	}
+	setTimeout("zippy()",280);
+	}
+	else{
+		document.hey.c.value=wordy;
+	}
+}
+
+
+</script>
+
+
+</HEAD>
+
+<BODY>
+  <h1 id="titulo"> Ejemplo 6</h1>
+  <div align="right">
+      <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
+    </div>
+
+<center>
+<form name="hey">
+<input type="text" name="a" size=13><br>
+<input type="text" name="b" size=13><br>
+<input type="text" name="c" size=13><br>
+<input type="text" name="d" size=13><br>
+<input type="text" name="e" size=13><br>
+<input type="button" name="start" value="Start" onclick="zip()">
+</form>
+</center>
+
+
+</body>
+</html>

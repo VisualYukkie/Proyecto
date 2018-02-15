@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript 8 </TITLE>
+<link rel="stylesheet" href="css/Estilo1.css">
+
+<script language="JavaScript">
+
+hexa = new MakeArray(16)
+hexa[10] = "A"
+hexa[11] = "B"
+hexa[12] = "C"
+hexa[13] = "D"
+hexa[14] = "E"
+hexa[15] = "F"
+
+function MakeArray(n)
+{
+this.length = n
+for (var i = 0; i <= n; i++)
+this[i] = i
+return this
+}
+
+function colours(text){
+
+var posa = 0
+var posb = 1
+while (posa <= text.length){
+var r = Math.floor(Math.random() * 15)
+var rr= Math.floor(Math.random() * 15)
+var g = Math.floor(Math.random() * 15)
+var gg = Math.floor(Math.random() * 15)
+var b = Math.floor(Math.random() * 15)
+var bb = Math.floor(Math.random() * 15)
+if (text.substring(posa,posb) == "<"){
+var posaa = 0
+posaa = posa
+while (text.substring(posaa,posb) != ">"){
+posaa++
+posb++
+}
+document.write(text.substring(posa, posb))
+posa = posb 
+posb = posa + 1
+}
+document.write("<font color=#"+hexa[r]+hexa[rr]+hexa[g]+hexa[gg]+hexa[b]+hexa[bb]+">")
+document.write(text.substring(posa, posb)+"</font>")
+posa++
+posb++
+}
+}
+
+</script>
+
+</HEAD>
+
+<BODY bgcolor="white">
+
+<script language = "javascript">
+
+text = " <font size=9> Texto unicamente con fines de prueba </font> </blink>"
+
+colours(text)
+
+</script>
+
+
+</HEAD>
+
+<BODY>
+  <h1 id="titulo"> Ejemplo 8</h1>
+  <div align="right">
+      <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
+    </div>
+
+</body>
+</html>

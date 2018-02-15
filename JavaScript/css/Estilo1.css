@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+    background-image: url("../Imagenes/Background.jpg");
+	  background-attachment: fixed;/*para que sea estático*/
+	  background-position: top right;/*arriba a la derecha*/
+	  background-repeat: no-repeat;/*que no se repita el fondo*/
+}
+
+h1 {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 50px Varela Round, sans-serif;
+  height: 100px;
+  left: 100px;
+  letter-spacing: 5px;
+  margin: 0 0 0 0;
+  position: static;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+#tabla1{
+	width: 100%; 
+  background-color: #10BF83;
+	border: 1px solid black;
+  border-collapse: collapse;
+}
+#linea1{
+	background: #01DFD7;
+	border: 2px solid black;
+  border-collapse: collapse;
+}
+#C1{
+	border: 2px solid black;
+  color: white;
+}
+#C2{
+	border: 2px solid black;
+}
+#C3{
+	border: 2px solid black;
+}
+#C4{
+	border: 2px solid black;
+}
+#titulo{
+         font:normal 30pt Arial;
+         color:#FFFFFF;
+         text-shadow: 0 1px 0 #ccc,
+         0 2px 0 #c9c9c9,
+         0 3px 0 #bbb,
+         0 4px 0 #b9b9b9,
+         0 5px 0 #aaa,
+         0 6px 1px rgba(0,0,0,.1),
+         0 0 5px rgba(0,0,0,.1),
+         0 1px 3px rgba(0,0,0,.3),
+         0 3px 5px rgba(0,0,0,.2),
+         0 5px 10px rgba(0,0,0,.25),
+         0 10px 10px rgba(0,0,0,.2),
+         0 20px 20px rgba(0,0,0,.15);
+      }

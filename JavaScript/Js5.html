@@ -1,0 +1,169 @@
+<HTML>
+<HEAD>
+
+<!-- Código descargado gratuitamente de HTMLpoint, el sitio italiano del web publishing
+                                   http://www.htmlpoint.com -->
+
+<TITLE>Ejemplos Javascript: ejemplo práctico </TITLE>
+<style type="text/css">
+  center{
+    color:white;
+  }
+</style>
+  <link rel="stylesheet" href="css/Estilo1.css">
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!-- Activate Cloaking Device
+
+//***************************************************************
+
+//
+
+//             Determining Screen Resolution III
+
+//                   (requires JavaScript1.2)
+
+//
+
+//        by Tim Wallace   (timothy@essex1.com)
+
+//
+
+//*************************************************************** 
+
+
+
+// Used to display the browser name/version if JavaScript1.2 is not supported
+
+var browser=navigator.appName + " " + navigator.appVersion;
+
+
+
+// Though set in the JS1.2 code, these variables are declared here to avoid errors in lesser browsers
+
+var width=null;
+
+var height=null;
+
+var right_browser=false;
+
+
+
+// Called by Requirements button
+
+function aboutScheme()
+
+   {
+
+   alert("\nThis example uses screen.height & screen.width to grab the screen resolution.\n\nThese were introduced in JavaScript1.2.");
+
+   }
+
+
+
+// Called by View Source button - displays text file of source.
+
+function viewSource()
+
+   {
+
+   alert("\nA text file with source will be loaded to the full window.\n\nUse your browser BACK button to return to the examples.");
+
+   top.window.location.href="js-wid3.txt";
+
+   }
+
+
+
+// Deactivate Cloaking -->
+
+
+</SCRIPT>
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+
+
+<!-- Activate Cloaking Device
+
+
+
+// Used to indicate that JS1.2 is supported
+
+right_browser=true;
+
+
+
+// Grabs screen resolution
+
+width = screen.width; 
+
+height = screen.height;
+
+
+
+// Deactivate Cloaking -->
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="white">
+
+    <h1 id="titulo"> Ejemplo 5</h1>
+  <div align="right">
+      <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
+    </div>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Activate Cloaking Device
+
+
+
+// If browser supports JS1.2
+
+if(right_browser)
+
+   {
+
+    (!alert("La resolucion de tu video es: "+width+" * "+height))
+   document.open();
+
+   document.write("<CENTER><FONT SIZE='+1'><B>La resolución de tu vídeo es<BR>");
+
+   document.write(width + " x " + height);
+
+   document.write("</B></FONT></CENTER>");
+
+   }
+
+
+
+// If browser does not support JS1.2 - display browser name/version & message
+
+else
+
+   {
+
+   document.open();
+
+   document.write("<CENTER>");
+
+   document.write("<FONT SIZE='+1'><B>"+browser+"</B></FONT><BR><BR>");
+
+   document.write("<FONT SIZE='+1'><B>does not support JavaScript1.2.</B></FONT></CENTER>");
+
+   }
+
+// Deactivate Cloaking -->
+
+</SCRIPT>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript 7 </TITLE>
+<link rel="stylesheet" href="css/Estilo1.css">
+
+<script language="javascript">
+
+
+function drip(){
+	wordy="HTMLpoint";
+	document.hey.a.value="";
+	document.hey.b.value="";
+	document.hey.c.value="";
+	document.hey.d.value="";
+	word="";
+	beat=0;
+	aa=0;
+	bb=0;
+	cc=0;
+	dd=0;
+	lo=wordy.length;
+	drop();	
+}
+
+function drop(){
+	if(beat<=lo*3+1){
+	beat=beat+1;
+	if(beat<=1){
+		document.hey.a.value=wordy;
+	}
+	if(beat>1&&beat<=lo+1){
+		fin="";
+		aa=aa+1;
+		for(var x=0;x<=aa-1;x++){
+			fin=fin+" ";
+		}
+		fin=fin+wordy.substring(aa,lo);
+		document.hey.a.value=fin;
+		document.hey.b.value=wordy.substring(0,aa);
+	}
+	if(beat>lo+1&&beat<=lo*2+1){
+		fin="";
+		bb=bb+1;
+		for(var x=0;x<=bb-1;x++){
+			fin=fin+" ";
+		}
+		fin=fin+wordy.substring(bb,lo);
+		document.hey.b.value=fin;
+		document.hey.c.value=wordy.substring(0,bb);
+	}
+	if(beat>lo*2+1&&beat<=lo*3+1){
+		fin="";
+		cc=cc+1;
+		for(var x=0;x<=cc-1;x++){
+			fin=fin+" ";
+		}
+		fin=fin+wordy.substring(cc,lo);
+		document.hey.c.value=fin;
+		document.hey.d.value=wordy.substring(0,cc);
+	}
+	setTimeout("drop()",200);
+	}
+	else{
+		document.hey.d.value=wordy;
+	}
+}
+
+
+</script>
+
+
+</HEAD>
+
+<BODY>
+  <h1 id="titulo"> Ejemplo 7</h1>
+  <div align="right">
+      <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
+    </div>
+
+<center>
+<form name="hey">
+<input type="text" name="a" size=13><br>
+<input type="text" name="b" size=13><br>
+<input type="text" name="c" size=13><br>
+<input type="text" name="d" size=13><br>
+<input type="button" name="start" value="Start" onclick="drip()">
+</form>
+</center>
+
+
+</body>
+</html>

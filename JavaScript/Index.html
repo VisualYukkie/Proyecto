@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charseta="UTF-8">
+	<title>Ejemplos Java Script</title>
+	<link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="Imagenes/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/Estilo1.css">
+</head>
+<body>
+	<div id="cuadro1">
+	<h1>Ejemplos Java Script</h1>
+	<table id="tabla1">
+		<tr id="linea1">
+			<td id="C1">Num</td>
+			<td id="C2">Nombre de Script</td>
+			<td id="C3">Descripción</td>
+			<td id="C4">Ejemplo</td>
+		</tr>		
+		<tr>
+			<td id="C1">1.-</td>
+			<td id="C2">Matrix - RGB</td>
+			<td id="C3">Numeros y letras que caen en cascada</td>
+			<td id="C4"><a href="JS1.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">2.-</td>
+			<td id="C2">Mensaje de pagina</td>
+			<td id="C3">Te muestra una ventana con el texto que quieras</td>
+			<td id="C4" style="color:blue"><a onclick="js2()">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">3.-</td>
+			<td id="C2">Saludo Personalizado</td>
+			<td id="C3">Sale una ventana emergente la cual te pregunta tu nombre y se saluda</td>
+			<td id="C4"><a href="Js3.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">4.-</td>
+			<td id="C2">Boton de regreso</td>
+			<td id="C3">Al presionar un boton te regresa a la pagina anterior</td>
+			<td id="C4"><a href="Js4.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">5.-</td>
+			<td id="C2">Screen Resolution</td>
+			<td id="C3">Te indica la resolucion de tu pantalla</td>
+			<td id="C4"><a href="Js5.html">Click</a></td>
+		</tr>	
+		<tr>
+			<td id="C1">6.-</td>
+			<td id="C2">Zipper</td>
+			<td id="C3">Intercambia el texto entre las distintas entradas para hacer un efecto</td>
+			<td id="C4"><a href="Js6.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">7.-</td>
+			<td id="C2">Drip</td>
+			<td id="C3">Intercambia las letras una por una como si fuera una cascada</td>
+			<td id="C4"><a href="Js7.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">8.-</td>
+			<td id="C2">Letras RGB</td>
+			<td id="C3">Texto con colores RGB en cada letra</td>
+			<td id="C4"><a href="Js8.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">9.-</td>
+			<td id="C2">Slider</td>
+			<td id="C3">Presentación de imagenes</td>
+			<td id="C4"><a href="Js9.html">Click</a></td>
+		</tr>
+		<tr>
+			<td id="C1">10.-</td>
+			<td id="C2">Show and Hide div</td>
+			<td id="C3">Al presionar el elemento se muestar o se oculta un cuadro</td>
+			<td id="C4" style="color:blue"><a onclick="show('cuadro2')">Click</a></td>
+		</tr>
+	</table>
+</div>
+<div id="cuadro2">
+		<iframe id="mapa" width='99%' height='350px' scrolling='no' src='https://www.goconqr.com/es-MX/p/12280480-Desarrollo-Web-mind_maps?frame=true' style='border: 10px solid #ccc' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe><a href='https://www.goconqr.com/es/mapas-mentales'>Mapa Mental creado con GoConqr por Victor Vicente Martinez Martinez</a>
+</div>
+	<script type="text/javascript">
+	function show(bloq) {
+	 obj = document.getElementById(bloq);
+	 obj.style.display = (obj.style.display=='none') ? 'block' : 'none';
+	}
+</script>
+<script>
+	if ($('#cuadro2').is(':show'))
+	$('#cuadro1').show();
+	else
+	$('#cuadro1').hide();
+</script>
+<script>
+	function js2(){
+		(!alert("Pagina creada por: Victor Vicente Martinez Martinez"))
+	}
+</script>
+
+</body>
+</html>
